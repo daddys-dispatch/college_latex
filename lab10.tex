@@ -1,0 +1,24 @@
+\documentclass[a4paper]{article}
+\usepackage{tikz}
+
+\thispagestyle{empty}
+
+\begin{document}
+    \centering
+    \tikzstyle{level 1} = [sibling distance = 6cm]
+    \tikzstyle{level 2} = [sibling distance = 3cm]
+    
+    \begin{tikzpicture}[grow=down, sloped, level distance = 4cm]
+        \node {Root}
+        child {
+            node {Child 1}
+            child {node {Subchild 1}}
+            child {node {Subchild 2}}
+        }
+        child {
+            node {Child 2}
+            child {node {Subchild 1}}
+            child {node {Subchild 2}}
+        };
+    \end{tikzpicture}
+\end{document}
