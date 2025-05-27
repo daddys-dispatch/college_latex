@@ -1,53 +1,48 @@
-\documentclass[11pt, a4paper]{report}
-\usepackage{graphicx, xcolor, soul, datetime}
-\usepackage{geometry}
-\geometry{a4paper, total={17cm, 25cm}, left=2cm, right=2cm, top=2.5cm, bottom=2.5cm}
-\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
+\documentclass[12pt, a4paper]{report} 
+\usepackage{geometry, graphicx}
+
+\geometry{left = 25mm, right = 25mm, top = 35mm, bottom = 35mm}
 \thispagestyle{empty}
 
 \begin{document}
-
 \begin{titlepage}
-    \begin{center}
-        \textbf{\Large VISVESVARAYA TECHNOLOGICAL UNIVERSITY}\\
-        {\normalsize Jnana Sangama, Belgaum - 590018}\\[0.6cm]
-        
-        \includegraphics[scale=0.4]{resources/vtu.png}\\[0.5cm]
-        
-        {\Large \textbf{CERTIFICATE}}\\[1cm]
-        {\normalsize This is to certify that} \\[0.3cm]
-
-        \underline{\hspace{9cm}} \\[0.3cm]
-        {\normalsize (Name of the Student)} \\[0.5cm]
-        {\normalsize bearing University Seat Number} \\[0.3cm]
-         
-        \underline{\hspace{8cm}} \\[0.3cm]
-        {\normalsize (University Seat Number)} \\[0.5cm]
-        {\normalsize has satisfactorily completed the project work entitled} \\[0.3cm]
-        
-        \underline{\hspace{10cm}} \\[0.3cm]
-        {\normalsize (Title of the Project)} \\[0.5cm]
-        {\normalsize towards the partial fulfillment of the requirements for the award of the degree of} \\[0.3cm]
-        
-        {\large \textbf{BACHELOR OF ENGINEERING}}\\[0.3cm]
-        {\large \textbf{IN}}\\[0.3cm]
-        {\large \textbf{COMPUTER SCIENCE AND ENGINEERING}}\\[1cm]
-        
-        \renewcommand{\arraystretch}{1}
-        \begin{tabular}{c @{\hspace{4cm}} c}
-            \textbf{Guide} & \textbf{Head of the Department} \\[0.3cm]
-            \underline{\hspace{5cm}} & \underline{\hspace{5cm}} \\[0.2cm]
-            \textbf{(Guide's Name)} & \textbf{(HOD's Name)} \\[0.2cm]
-            \textbf{(Guide's Designation)} & \textbf{(HOD's Designation)} \\[0.2cm]
-            \textbf{Department of CSE} & \textbf{Department of CSE} \\
-        \end{tabular}
-        
-        \vspace{1cm}
-        
-        \textbf{BANGALORE TECHNOLOGICAL INSTITUTE}\\[0.3cm]
-        \textbf{Bangalore, Karnataka - 560068}\\[0.3cm]
-        \textbf{\monthyear\today}
-    \end{center}
+\centering
+    \textbf{\large VISVESVARAYA TECHNOLOGICAL UNIVERSITY} \\
+    \small Belgavi, Karnataka \\
+    \vspace{10mm}
+    \includegraphics[height = 30mm]{logo/vtu.png} \\
+    \vspace{10mm}
+    This is to certify that \\
+    \vspace{2.5mm}
+    \textbf{John Doe} \\
+    \vspace{5mm}
+    bearing University Seat Number \\
+    \vspace{2.5mm}
+    \textbf{1BH23CS024} \\
+    \vspace{5mm}
+    has satisfactorily completed the project work entitled \\
+    \vspace{2.5mm}
+    \textbf{\large ``Create Certificate Format Using \LaTeX"} \\
+    \vspace{5mm}
+    towards partial fulfillment of the curriculum prescribed for the award of the degree of \\
+    \vspace{2.5mm}
+    \textbf{BACHELOR OF ENGINEERING} \\
+    in \\
+    \textbf{COMPUTER SCIENCE \& ENGINEERING} \\
+    \vspace{10mm}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \vspace{10mm}
+        Guide & Head of Department \\
+        \underline{\hspace{50mm}} & \underline{\hspace{50mm}} \\
+        \textbf{Mr. Srinath B G} & \textbf{Dr. Sreeramareddy} \\
+        Assistant Professor, CSE & Head of Department, CSE \\
+    \end{tabular*} \\
+    \vspace{10mm}
+    \includegraphics[width = 50mm]{logo/bti.png} \\
+    \vspace{5mm}
+    \textbf{BANGALORE TECHNOLOGICAL INSTITUTE} \\
+    Bengaluru, Karnataka \\
+    \vspace{10mm}
+    2024 -- 2025
 \end{titlepage}
-
 \end{document}
